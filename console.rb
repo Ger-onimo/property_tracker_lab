@@ -15,10 +15,20 @@ property2 = Property.new( {
                 'rooms' => '4'
               } )
 
-property1.save
-property2.save
+property3 = Property.new( {
+                'address' => '5 Cheapo Ter',
+                'value' => '£200',
+                'build' => 'town house',
+                'rooms' => '1'
+              } )
 
-the_properties = Property.all()
+property1.save #test for save
+property2.save #test for save
+property3.save
+
+property1.delete #test for delete
+
+properties_result = Property.all()
 
 binding.pry
 nil
