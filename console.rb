@@ -15,5 +15,10 @@ property2 = Property.new( {
                 'rooms' => '4'
               } )
 
+property1.save
+property2.save
+
+the_properties = Property.all()
+
 binding.pry
 nil
