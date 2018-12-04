@@ -1,6 +1,8 @@
 require('pry')
 require_relative('models/property')
 
+Property.delete_all
+
 property1 = Property.new( {
               'address' => '1 Main St',
               'value' => '£700',
